@@ -35,6 +35,7 @@ form{
 }
 .botao{
     display: flex;
+    color: black;
     background-color: white;
     width: 80px;
     height: 40px;

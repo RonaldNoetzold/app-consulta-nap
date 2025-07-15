@@ -29,6 +29,18 @@ form{
     font-weight: 600;
     font-style: normal;
 }
+.botao_consulta{
+    display: flex;
+    color: black;
+    background-color: white;
+    width: 80px;
+    height: 40px;
+    border-radius: 7%;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    text-decoration: none;
+}
 .apresentacao__button_consulta{
     display: flex;
     flex-direction: column;
