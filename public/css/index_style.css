@@ -21,6 +21,11 @@ form{
    align-items: center;
    justify-content: center;
    margin: 7%;
+    /* fonte poppins */
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+
 }
 .login__conteudo{
     display: flex;
@@ -29,7 +34,7 @@ form{
     justify-content: center;
 }
 
-/* Familia de Fonte Poppins*/
+/* Familia de Fonte Poppins
 .poppins-thin {
   font-family: "Poppins", sans-serif;
   font-weight: 100;
@@ -137,3 +142,4 @@ form{
   font-weight: 900;
   font-style: italic;
 }
+*/
