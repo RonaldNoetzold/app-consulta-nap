@@ -33,7 +33,26 @@ form{
     align-items: center;
     justify-content: center;
 }
-
+.botao{
+    display: flex;
+    background-color: white;
+    width: 80px;
+    height: 40px;
+    border-radius: 7%;
+    justify-content: center;;
+    align-items: center;
+    font-size: 17px;
+    
+   
+}
+.apresentacao__button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
 /* Familia de Fonte Poppins
 .poppins-thin {
   font-family: "Poppins", sans-serif;
