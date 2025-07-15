@@ -1,3 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #FF5814;
+    color: white;
+    font: 12px bebas-neue, sans-serif;
+    font-style: normal;
+}
+form{
+    font: 12px bebas-neue, sans-serif;
+}
 .teste-classes{
     color: white;
 }
