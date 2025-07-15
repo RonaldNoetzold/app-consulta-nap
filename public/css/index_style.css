@@ -1,0 +1,15 @@
+.teste-classes{
+    color: white;
+}
+.apresentacao{
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   margin: 7%;
+}
+.login__conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
