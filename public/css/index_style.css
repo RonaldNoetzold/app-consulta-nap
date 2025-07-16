@@ -7,36 +7,40 @@ body {
     box-sizing: border-box;
     background-color: #FF5814;
     color: white;
-    font: 12px bebas-neue, sans-serif;
+       /* fonte poppins */
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
     font-style: normal;
 }
 form{
-    font: 12px bebas-neue, sans-serif;
+        /* fonte poppins */
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    
 }
-.titulo{
+.titulo_home{
     color: white;
+    font-size: 24px;
 }
 .apresentacao{
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   margin: 7%;
-    /* fonte poppins */
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-
+   margin-top: 7%;
 }
 .login__conteudo{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    align-content: center;
+    margin-top: 30%;
 }
 .botao{
     display: flex;
-    color: black;
-    background-color: white;
+    color: white;
+    background-color: #FF5814;
     width: 80px;
     height: 40px;
     border-radius: 7%;
@@ -45,10 +49,15 @@ form{
     font-size: 13px;
     text-decoration: none;
 }
-.apresentacao__button{
+.login-box{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
+    width: 300px;
+    height: 300px;
+    color: #FF5814;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
