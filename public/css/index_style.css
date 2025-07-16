@@ -16,12 +16,7 @@ form{
         /* fonte poppins */
     font-family: "Poppins", sans-serif;
     font-weight: 500;
-    font-style: normal;
-    
-}
-.titulo_home{
-    color: white;
-    font-size: 24px;
+    font-style: normal; 
 }
 .apresentacao{
    flex-direction: column;
@@ -30,34 +25,43 @@ form{
    margin-top: 7%;
 }
 .login__conteudo{
+    margin: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     align-content: center;
-    margin-top: 30%;
+}
+.titulo_home{
+    color: white;
+    font-size: 24px;
 }
 .botao{
     display: flex;
-    color: white;
-    background-color: #FF5814;
-    width: 80px;
-    height: 40px;
-    border-radius: 7%;
+    color: #FF5814;
+    background-color: white;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
     justify-content: center;;
     align-items: center;
-    font-size: 13px;
+    font-size: 15px;
     text-decoration: none;
 }
 .login-box{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: left;
     justify-content: center;
     width: 300px;
     height: 300px;
-    color: #FF5814;
-    background-color: #F2F2F2;
+    color: white;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: none;
+}
+.box_login{
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    height: 27px;
 }
