@@ -7,21 +7,24 @@ body {
     box-sizing: border-box;
     background-color: #FF5814;
     color: white;
-    font: 12px bebas-neue, sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
     font-style: normal;
 }
-form{
-    font: 12px bebas-neue, sans-serif;
-}
 .consulta{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal; 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 7%;
+    margin: 25%;
+    align-content: center;
 }
 .consulta__NAP{
     display: flex;
+    align-content: center;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -29,23 +32,35 @@ form{
     font-weight: 600;
     font-style: normal;
 }
-.botao_consulta{
-    display: flex;
-    color: black;
-    background-color: white;
-    width: 80px;
-    height: 40px;
-    border-radius: 7%;
-    justify-content: center;
-    align-items: center;
-    font-size: 13px;
-    text-decoration: none;
-}
-.apresentacao__button_consulta{
+.consulta-box{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: left;
     justify-content: center;
-    margin-top: 20px;
-    border-radius: 35px;
+    width: 300px;
+    height: 300px;
+    color: white;
+    border-radius: 10px;
+    box-shadow: none;
+    row-gap:15px;
+}
+.box-consulta{
+    text-align: left;
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    height: 27px;
+}
+.botao_consulta{
+    display: flex;
+    align-content: center;
+    color: #FF5814;
+    background-color: white;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    text-decoration: none;
 }
