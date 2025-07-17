@@ -7,13 +7,11 @@ body {
     box-sizing: border-box;
     background-color: #FF5814;
     color: white;
-       /* fonte poppins */
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
 }
 form{
-        /* fonte poppins */
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal; 
