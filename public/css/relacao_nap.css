@@ -60,10 +60,87 @@ body {
     height: 30px;
     border-radius: 15px;
 }
+.menu_nodo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.menu_botao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row;
+    text-decoration: none;
+    color: #FF5814;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: white;
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+}
 .footer {
     display: flex;
     justify-content: center;
     align-items: flex-end;
     padding: 10px 10px;
     font-size: 14px;
+}
+
+/*codigo do gemini */
+
+.main-content {
+    flex-grow: 1; /* Ocupa o espaço restante */
+    padding: 20px;
+    padding-bottom: 80px; /* Para garantir que o conteúdo não seja ocultado pelo menu inferior */
+}
+
+/* --- Menu Inferior --- */
+.bottom-nav {
+    position: fixed;
+    bottom: 10px;
+    left: 40%;
+    width: 20%;
+    background-color: #fff;
+    border-top: 1px solid #eee;
+    border-radius: 22px;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+    z-index: 1000; /* Garante que fique acima de outros elementos */
+}
+
+.bottom-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    height: 60px; /* Altura do menu inferior */
+}
+
+.bottom-nav li {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-nav a {
+    text-decoration: none;
+    color: #555;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    padding: 5px;
+}
+
+.bottom-nav a:hover {
+    color: #8A05BE; /* Cor roxa do Nubank */
+}
+
+.bottom-nav img {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 4px;
 }
