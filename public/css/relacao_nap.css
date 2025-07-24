@@ -19,13 +19,11 @@ body {
     font-size: 24px;
 }
 .login__conteudo{
-    margin: 5%;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    align-content: space-around;
-    gap: 10px 30px;
+    gap: 10px;
 }
 .titulo_botoes{
     display: flex;
