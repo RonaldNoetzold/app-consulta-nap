@@ -18,37 +18,35 @@ body {
     color: white;
     font-size: 24px;
 }
-.login__conteudo{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+.pesquisar_localizar{
+    display: flex; /* Transforma o container em um flex container */
+    flex-direction: column; /* Coloca os itens um abaixo do outro */
+    align-items: center; /* Centraliza os itens horizontalmente dentro do container */
+    justify-content: center; /* Centraliza verticalmente (se houver espaço) */
+    gap: 10px; /* Cria um espaçamento entre os itens-acao */
+    /* Remova 'width' e 'margin: 0 auto' daqui, pois o align-items fará a centralização */
+    /* Se precisar que a div .botoes_acao ocupe um espaço específico para depois centralizar ela, adicione width e margin: 0 auto */
+    /* Ex: width: 300px; margin: 0 auto; */
 }
-.titulo_botoes{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-    font-size: 18px;
+.botoes_acao{
+    display: flex; /* Torna cada linha um flex container */
+    align-items: center; /* Alinha o h3 e o a verticalmente no centro */
+    justify-content: center; /* Centraliza h3 e a horizontalmente dentro do item-acao */
+    /* Isso fará com que o ":" do h3 e o botão fiquem alinhados e centralizados */
+    flex-wrap: wrap; /* Permite que os itens quebrem a linha se não houver espaço */
+    gap: 5px; /* Espaço entre o h3 e o a */
 }
-.botao_localizar{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: #FF5814;
-    font-size: 15px;
-    font-weight: 600;
-    background-color: white;
-    width: 115px;
-    height: 30px;
-    border-radius: 15px;
+.botoes_acao h3{
+    margin: 0; /* Remove margens padrão do h3 para um alinhamento preciso */
+    /* Poderia adicionar padding-right: 5px; se quiser um espaço fixo entre o texto e o botão */
 }
+.botao_localizar,
 .botao_atualizar{
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    line-height: 30px;
     text-decoration: none;
     color: #FF5814;
     font-size: 15px;
@@ -56,26 +54,6 @@ body {
     background-color: white;
     width: 115px;
     height: 30px;
-    border-radius: 15px;
-}
-.menu_nodo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-}
-.menu_botao{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: row;
-    text-decoration: none;
-    color: #FF5814;
-    font-size: 15px;
-    font-weight: 600;
-    background-color: white;
-    width: 150px;
-    height: 50px;
     border-radius: 15px;
 }
 .footer {
