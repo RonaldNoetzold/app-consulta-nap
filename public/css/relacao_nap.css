@@ -16,7 +16,7 @@ body {
     justify-content: center;
     margin: 10%;
     color: white;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 .login__conteudo{
     display: flex;
@@ -30,7 +30,7 @@ body {
     flex-direction: column;
     align-items: center;
     color: white;
-    font-size: 18px;
+    font-size: 1.2rem;
 }
 .botao_localizar{
     display: flex;
@@ -38,7 +38,7 @@ body {
     justify-content: center;
     text-decoration: none;
     color: #FF5814;
-    font-size: 15px;
+    font-size: 0.93rem;
     font-weight: 600;
     background-color: white;
     width: 115px;
@@ -51,7 +51,7 @@ body {
     justify-content: center;
     text-decoration: none;
     color: #FF5814;
-    font-size: 15px;
+    font-size: 0.93rem;
     font-weight: 600;
     background-color: white;
     width: 115px;
@@ -71,7 +71,7 @@ body {
     flex-flow: row;
     text-decoration: none;
     color: #FF5814;
-    font-size: 15px;
+    font-size: 0.94rem;
     font-weight: 600;
     background-color: white;
     width: 150px;
@@ -83,7 +83,7 @@ body {
     justify-content: center;
     align-items: flex-end;
     padding: 10px 10px;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 /*codigo do gemini */
@@ -113,7 +113,7 @@ body {
     margin: 0;
     display: flex;
     justify-content: space-around;
-    height: 60px; /* Altura do menu inferior */
+    height: 7%; /* Altura do menu inferior */
 }
 
 .bottom-nav li {
@@ -129,7 +129,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 12px;
+    font-size: 0.75rem;
     padding: 5px;
 }
 
