@@ -1,4 +1,4 @@
-html, body {
+html{
     height: 100%;
     margin: 0;
     padding: 0;
@@ -6,6 +6,7 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     height: 100%;
     box-sizing: border-box;
     background-color: #FF5814;
@@ -15,7 +16,7 @@ body {
     font-style: normal;
 }
 .relacao {
-    flex-grow: 1;
+    /*flex-grow: 1;*/
     /* Adicione padding para o conteúdo não grudar nas bordas */
     padding-bottom: 80px; /* Adiciona espaço para a barra de navegação inferior */
 }
@@ -223,9 +224,9 @@ body {
     position: absolute;
     left: 0;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-80%);
     width: 2px;
-    height: 80%;
+    height: 50%;
     background-color: #ff9d85;
 }
 .client-status.online {
@@ -252,7 +253,7 @@ body {
 .details-button::before {
     content: '';
     position: absolute;
-    left: calc(100% - 60px); /* Ajuste este valor para mover a linha */
+    left: calc(100% - 80px); /* Ajuste este valor para mover a linha */
     top: 50%;
     transform: translateY(-50%);
     width: 1px;
