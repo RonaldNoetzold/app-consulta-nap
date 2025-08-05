@@ -1,15 +1,23 @@
-*{
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
 }
 body {
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     box-sizing: border-box;
     background-color: #FF5814;
     color: white;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
+}
+.relacao {
+    flex-grow: 1;
+    /* Adicione padding para o conteúdo não grudar nas bordas */
+    padding-bottom: 80px; /* Adiciona espaço para a barra de navegação inferior */
 }
 .titulo_consulta{
     display: flex;
@@ -161,4 +169,93 @@ body {
     width: 24px;
     height: 24px;
     margin-bottom: 4px;
+}
+
+/* ---Listagem dos clientes --- */
+.client-list-container {
+    height: auto;
+    width: 100%;
+    max-width: 400px;
+    max-height: 400px;
+    background-color: white; /* Cor de fundo principal */
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.client-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.client-item {
+    display: flex;
+    align-items: center;
+    background-color: #ffb8a4; /* Cor de fundo de cada item */
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #FF5814; /* Cor do texto */
+    text-transform: uppercase;
+    position: relative;
+}
+
+.client-item:last-child {
+    margin-bottom: 0;
+}
+
+.client-name {
+    flex-grow: 1;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+.client-status {
+    font-size: 14px;
+    padding: 0 15px;
+    position: relative;
+}
+
+.client-status.online::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 80%;
+    background-color: #ff9d85;
+}
+.client-status.online {
+    color: green;
+}
+.client-status.offline {
+    color: red;
+}
+
+.details-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #FF5814;
+    font-size: 18px;
+    padding: 0 10px;
+}
+
+.details-button:hover {
+    opacity: 0.8;
+}
+
+/* Linha vertical entre o status e o botão de detalhes */
+.details-button::before {
+    content: '';
+    position: absolute;
+    left: calc(100% - 60px); /* Ajuste este valor para mover a linha */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 80%;
+    background-color: #ff9d85;
 }
