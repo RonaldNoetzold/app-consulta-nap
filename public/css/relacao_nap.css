@@ -134,7 +134,7 @@ body {
 .client-status.online::before {
     content: '';
     position: absolute;
-    left: calc(100% - 120px); /* Ajuste este valor para mover a linha */
+    left: calc(100% - 100px); /* Ajuste este valor para mover a linha */
     top: 50%;
     transform: translateY(-50%);
     width: 1px;
@@ -143,12 +143,12 @@ body {
 }
 .client-status.online {
     color: green;
-    left: calc(100% - 470px); /* Ajuste este valor para mover o status */
+    left: calc(100% - 490px); /* Ajuste este valor para mover o status */
 }
 .client-status.offline::before {
     content: '';
     position: absolute;
-    left: calc(100% - 120px); /* Ajuste este valor para mover a linha */
+    left: calc(100% - 100px); /* Ajuste este valor para mover a linha */
     top: 50%;
     transform: translateY(-50%);
     width: 1px;
@@ -157,32 +157,38 @@ body {
 }
 .client-status.offline {
     color: red;
-    left: calc(100% - 470px); /* Ajuste este valor para mover o status */
+    left: calc(100% - 490px); /* Ajuste este valor para mover o status */
 }
 
 .details-button {
     background: none;
     border: none;
+    position: absolute;
+    right: 40px; /* Ajuste este valor para mover o botão */
+    top: 35%;
+    transform: translateY(-50%);
     cursor: pointer;
-    color: #FF5814;
-    font-size: 18px;
-    padding: 0 10px;
+    padding: 0;
+    width: 30px; /* Largura do botão */
+    height: 20px; /* Altura do botão */
 }
-
+.details-button img {
+    width: 100%; /* Ajusta a imagem para ocupar todo o botão */
+    height: auto; /* Mantém a proporção da imagem */
+}
 .details-button:hover {
     opacity: 0.8;
 }
-
 /* Linha vertical entre o status e o botão de detalhes */
 .details-button::before {
     content: '';
     position: absolute;
-    left: calc(100% - 85px); /* Ajuste este valor para mover a linha */
-    top: 50%;
+    left: calc(100% - 75px); /* Ajuste este valor para mover a linha */
+    top: 90%;
     transform: translateY(-50%);
     width: 1px;
-    height: 80%;
-    background-color: #ff9d85;
+    height: 110%;
+    background-color: #ff9d85; /* Cor da linha */
 }
 
 /* =========================
@@ -250,9 +256,6 @@ body {
     align-items: center;
     font-size: 0.75rem;
     padding: 5px;
-}
-.bottom-nav a:hover {
-    color: #8A05BE; /* Cor roxa do Nubank */
 }
 .bottom-nav img {
     width: 24px;
