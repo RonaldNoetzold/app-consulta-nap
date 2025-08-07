@@ -63,3 +63,9 @@ form{
     border: none;
     height: 27px;
 }
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 14px;
+}

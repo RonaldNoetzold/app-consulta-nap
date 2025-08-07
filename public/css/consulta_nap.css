@@ -64,3 +64,10 @@ body {
     font-size: 15px;
     text-decoration: none;
 }
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 10px 0;
+    font-size: 14px;
+}

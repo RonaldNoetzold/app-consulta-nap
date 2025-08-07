@@ -1,0 +1,274 @@
+html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #FF5814;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.relacao {
+    /*flex-grow: 1;*/
+    /* Adicione padding para o conteúdo não grudar nas bordas */
+    padding-bottom: 80px; /* Adiciona espaço para a barra de navegação inferior */
+}
+.titulo_consulta{
+    display: flex;
+    justify-content: center;
+    margin: 10%;
+    color: white;
+    font-size: 1.5rem;
+}
+.pesquisar_localizar{
+    display: flex; /* Transforma o container em um flex container */
+    flex-direction: column; /* Coloca os itens um abaixo do outro */
+    align-items: center; /* Centraliza os itens horizontalmente dentro do container */
+    justify-content: center; /* Centraliza verticalmente (se houver espaço) */
+    gap: 10px; /* Cria um espaçamento entre os itens-acao */
+    /* Remova 'width' e 'margin: 0 auto' daqui, pois o align-items fará a centralização */
+    /* Se precisar que a div .botoes_acao ocupe um espaço específico para depois centralizar ela, adicione width e margin: 0 auto */
+    /* Ex: width: 300px; margin: 0 auto; */
+}
+.titulo_botoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 1.2rem;
+}
+.botao_localizar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #FF5814;
+    font-size: 0.93rem;
+    font-weight: 600;
+    background-color: white;
+    width: 115px;
+    height: 30px;
+    border-radius: 15px;
+}
+.botoes_acao{
+    display: flex; /* Torna cada linha um flex container */
+    align-items: center; /* Alinha o h3 e o a verticalmente no centro */
+    justify-content: center; /* Centraliza h3 e a horizontalmente dentro do item-acao */
+    /* Isso fará com que o ":" do h3 e o botão fiquem alinhados e centralizados */
+    flex-wrap: wrap; /* Permite que os itens quebrem a linha se não houver espaço */
+    gap: 5px; /* Espaço entre o h3 e o a */
+}
+.botoes_acao h3{
+    margin: 0; /* Remove margens padrão do h3 para um alinhamento preciso */
+    /* Poderia adicionar padding-right: 5px; se quiser um espaço fixo entre o texto e o botão */
+}
+.botao_localizar,
+.botao_atualizar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 30px;
+    text-decoration: none;
+    color: #FF5814;
+    font-size: 0.93rem;
+    font-weight: 600;
+    background-color: white;
+    width: 115px;
+    height: 30px;
+    border-radius: 15px;
+}
+/* ---Listagem dos clientes --- */
+.client-list-container {
+    height: auto;
+    width: 100%;
+    max-width: 400px;
+    max-height: 400px;
+    background-color: white; /* Cor de fundo principal */
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* Centraliza horizontalmente */
+}
+
+.client-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.client-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffb8a4; /* Cor de fundo de cada item */
+    border-radius: 10px;
+    padding: 8px 15px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #FF5814; /* Cor do texto */
+    text-transform: uppercase;
+    position: relative; /* Necessário para o posicionamento do botão de detalhes */
+}
+
+.client-item:last-child {
+    margin-bottom: 0;
+}
+
+.client-name {
+    flex-grow: 1;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+.client-status {
+    font-size: 14px;
+    padding: 0 15px;
+    position: relative;
+}
+
+.client-status.online::before {
+    content: '';
+    position: absolute;
+    left: calc(100% - 100px); /* Ajuste este valor para mover a linha */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 100%;
+    background-color: #ff9d85;
+}
+.client-status.online {
+    color: green;
+    left: calc(100% - 490px); /* Ajuste este valor para mover o status */
+}
+.client-status.offline::before {
+    content: '';
+    position: absolute;
+    left: calc(100% - 100px); /* Ajuste este valor para mover a linha */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 100%;
+    background-color: #ff9d85;
+}
+.client-status.offline {
+    color: red;
+    left: calc(100% - 490px); /* Ajuste este valor para mover o status */
+}
+
+.details-button {
+    background: none;
+    border: none;
+    position: absolute;
+    right: 40px; /* Ajuste este valor para mover o botão */
+    top: 35%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 0;
+    width: 30px; /* Largura do botão */
+    height: 20px; /* Altura do botão */
+}
+.details-button img {
+    width: 100%; /* Ajusta a imagem para ocupar todo o botão */
+    height: auto; /* Mantém a proporção da imagem */
+}
+.details-button:hover {
+    opacity: 0.8;
+}
+/* Linha vertical entre o status e o botão de detalhes */
+.details-button::before {
+    content: '';
+    position: absolute;
+    left: calc(100% - 75px); /* Ajuste este valor para mover a linha */
+    top: 90%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 110%;
+    background-color: #ff9d85; /* Cor da linha */
+}
+
+/* =========================
+        MENU NODO
+============================*/
+
+.menu_nodo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.menu_botao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row;
+    text-decoration: none;
+    color: #FF5814;
+    font-size: 0.94rem;
+    font-weight: 600;
+    background-color: white;
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+}
+/*codigo do gemini */
+.main-content {
+    flex-grow: 1; /* Ocupa o espaço restante */
+    padding: 20px;
+    padding-bottom: 80px; /* Para garantir que o conteúdo não seja ocultado pelo menu inferior */
+}
+/* --- Menu Inferior --- */
+.bottom-nav {
+    position: fixed;
+    bottom: 10px;
+    left: 40%;
+    width: 20%;
+    background-color: #fff;
+    border-top: 1px solid #eee;
+    border-radius: 22px;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+    z-index: 1000; /* Garante que fique acima de outros elementos */
+    gap: 10%;
+}
+.bottom-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    height: 7%; /* Altura do menu inferior */
+}
+.bottom-nav li {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bottom-nav a {
+    text-decoration: none;
+    color: #555;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.75rem;
+    padding: 5px;
+}
+.bottom-nav img {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 4px;
+}
+/* =========================
+        FOOTER - RODAPE
+============================*/
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 10px 10px;
+    font-size: 0.875rem;
+}
