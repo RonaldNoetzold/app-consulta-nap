@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <style>
-         /* fonte para letras popins */
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-    </style>
+    
     <link rel="stylesheet" href="../css/relacao_nap.css">
+    <link rel="stylesheet" href="../css/components.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Relação-NAP</title>
@@ -59,15 +57,8 @@
                     </ul>
                 </div>
     </main>
-    <nav class="bottom-nav">
-        <ul>
-            <li><a href="index.html" class="nav-item" data-menu="home"><img src="../assets/home.png" alt="Home"><span>Início</span></a></li>
-            <li><a href="consulta.html" class="nav-item" data-menu="consulta"><img src="../assets/search.png" alt="Consulta"><span>Consulta</span></a></li>
-        </ul>
-    </nav>
-                <script src="teste.js"></script>
-    <footer class="footer">
-        <p>&copy; 2025 - Sulnet. Todos os direitos reservados.</p>
-    </footer>
+    <div data-include-html="../components/nav.html"></div>
+    <div data-include-html="../components/footer.html"></div>
+    <script src="../js/component-loader.js"></script>
 </body>
 </html>  

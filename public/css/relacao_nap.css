@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 html{
-    height: 100%;
     margin: 0;
     padding: 0;
 }
 body {
-    height: 100%;
+    height: 100vh;
+    overflow: hidden;
     box-sizing: border-box;
     background-color: #FF5814;
     color: white;
@@ -20,7 +22,7 @@ body {
 .titulo_consulta{
     display: flex;
     justify-content: center;
-    margin: 10%;
+    margin: 5% auto 10%;
     color: white;
     font-size: 1.5rem;
 }
@@ -220,55 +222,4 @@ body {
     flex-grow: 1; /* Ocupa o espaço restante */
     padding: 20px;
     padding-bottom: 80px; /* Para garantir que o conteúdo não seja ocultado pelo menu inferior */
-}
-/* --- Menu Inferior --- */
-.bottom-nav {
-    position: fixed;
-    bottom: 10px;
-    left: 40%;
-    width: 20%;
-    background-color: #fff;
-    border-top: 1px solid #eee;
-    border-radius: 22px;
-    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
-    z-index: 1000; /* Garante que fique acima de outros elementos */
-    gap: 10%;
-}
-.bottom-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: space-around;
-    height: 7%; /* Altura do menu inferior */
-}
-.bottom-nav li {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.bottom-nav a {
-    text-decoration: none;
-    color: #555;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 0.75rem;
-    padding: 5px;
-}
-.bottom-nav img {
-    width: 24px;
-    height: 24px;
-    margin-bottom: 4px;
-}
-/* =========================
-        FOOTER - RODAPE
-============================*/
-.footer {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    padding: 10px 10px;
-    font-size: 0.875rem;
 }
