@@ -131,7 +131,7 @@ body {
     font-size: 14px;
     width: 0;
 
-    position: fixed;
+    position: relative;
 }
 
 .client-status.online::before {
