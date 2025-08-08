@@ -124,13 +124,14 @@ body {
 .client-name {
     flex-grow: 1;
     font-size: 16px;
-    letter-spacing: 0.5px;
+    
 }
 
 .client-status {
     font-size: 14px;
-    padding: 0 15px;
-    position: relative;
+    width: 0;
+
+    position: fixed;
 }
 
 .client-status.online::before {
